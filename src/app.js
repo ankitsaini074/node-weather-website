@@ -24,14 +24,14 @@ app.get('', (req, res) => {
     })
 })
 
-app.get('/about', (req, res) => {
+app.get('about', (req, res) => {
     res.render('About',{
         title: 'About',
         name: 'Ankit'
     })
 })
 
-app.get('/help', (req, res) => {
+app.get('help', (req, res) => {
     res.render('Help',{
         helpText: 'This is some helpful text.',
         title: 'Help',
